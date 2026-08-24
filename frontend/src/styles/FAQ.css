@@ -1,0 +1,12 @@
+/* ─── FAQ ─── */
+.faq-list { display:flex; flex-direction:column; gap:10px; }
+.faq-item { background:var(--card); border:1px solid var(--border); border-radius:12px; overflow:hidden; box-shadow:var(--shadow-sm); }
+.faq-q { padding:18px 22px; font-weight:600; font-size:15px; cursor:pointer; display:flex; justify-content:space-between; align-items:center; user-select:none; transition:background .15s; }
+.faq-q:hover { background:var(--gold-light); }
+.faq-arrow { color:var(--red); font-size:20px; font-weight:300; transition:transform .25s; flex-shrink:0; }
+.faq-item.open .faq-arrow { transform:rotate(45deg); }
+.faq-a { max-height:0; overflow:hidden; transition:max-height .35s ease, padding .35s ease; font-size:14px; color:var(--ink-soft); line-height:1.85; padding:0 22px; }
+.faq-item.open .faq-a { max-height:300px; padding:16px 22px 20px; border-top:1px solid var(--border); }
+.faq-cats { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:30px; }
+.faq-cat-btn { padding:8px 18px; border-radius:20px; border:1.5px solid var(--border); background:var(--card); font-family:'Cairo',sans-serif; font-size:13px; cursor:pointer; transition:all .2s; color:var(--ink-soft); }
+.faq-cat-btn.active { background:var(--red); color:#fff; border-color:var(--red); }
